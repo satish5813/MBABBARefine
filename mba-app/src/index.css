@@ -1,10 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html, body, #root { height: 100%; margin: 0; }
 body {
-  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  background: #f8fafc;
-  color: #0f172a;
+  font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  color: #1e1b4b;
+  background: #eef0fb;
+  overflow-x: hidden;
 }
+
+/* Animated background blobs */
+.bg-clay-canvas {
+  position: relative;
+  background: linear-gradient(135deg, #eef0fb 0%, #fdf2f8 40%, #ecfeff 100%);
+}
+.bg-clay-canvas::before,
+.bg-clay-canvas::after {
+  content: "";
+  position: fixed;
+  width: 520px;
+  height: 520px;
+  filter: blur(80px);
+  opacity: 0.55;
+  z-index: 0;
+  pointer-events: none;
+  animation: blob 14s ease-in-out infinite;
+}
+.bg-clay-canvas::before {
+  top: -160px; left: -160px;
+  background: radial-gradient(circle, #c7d2fe, transparent 60%);
+}
+.bg-clay-canvas::after {
+  bottom: -160px; right: -160px;
+  background: radial-gradient(circle, #fbcfe8, transparent 60%);
+  animation-delay: 4s;
+}
+
+.clay {
+  background: #f5f3ff;
+  border-radius: 28px;
+  box-shadow:
+    12px 12px 28px rgba(159,170,210,0.55),
+    -12px -12px 28px rgba(255,255,255,0.95);
+}
+.clay-soft {
+  background: #f5f3ff;
+  border-radius: 22px;
+  box-shadow:
+    8px 8px 20px rgba(159,170,210,0.45),
+    -8px -8px 20px rgba(255,255,255,0.9);
+}
+.clay-inset {
+  border-radius: 18px;
+  box-shadow:
+    inset 6px 6px 12px rgba(159,170,210,0.4),
+    inset -6px -6px 12px rgba(255,255,255,0.95);
+}
+.clay-btn {
+  border-radius: 18px;
+  background: #f5f3ff;
+  box-shadow:
+    6px 6px 14px rgba(99,102,241,0.25),
+    -6px -6px 14px rgba(255,255,255,0.95);
+  transition: all 0.2s ease;
+}
+.clay-btn:hover { transform: translateY(-2px); }
+.clay-btn:active {
+  box-shadow:
+    inset 4px 4px 10px rgba(99,102,241,0.25),
+    inset -4px -4px 10px rgba(255,255,255,0.95);
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#a5b4fc,#818cf8);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track { background: transparent; }

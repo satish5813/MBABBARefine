@@ -1028,7 +1028,8 @@
       "portfolio": "4 dashboards, SQL queries, business insight memo, stakeholder presentation",
       "employers": "Big 4, analytics consulting, SaaS analytics teams, GCCs",
       "ctcLogic": "30+ LPA usually needs strong portfolio + internship/live project + interview case performance, not certificate alone",
-      "action": "Weeks 1-4 Power BI, Weeks 5-8 SQL/BI projects, Weeks 9-12 portfolio + case interviews"
+      "action": "Weeks 1-4 Power BI, Weeks 5-8 SQL/BI projects, Weeks 9-12 portfolio + case interviews",
+      "package": "20–32 LPA"
     },
     {
       "no": "2",
@@ -1038,7 +1039,8 @@
       "portfolio": "Salesforce process map, BRD, user stories, reports, demo org",
       "employers": "Salesforce partners, SaaS firms, IT services, consulting firms",
       "ctcLogic": "CRM consulting can scale fast because domain + process + tool skills combine",
-      "action": "Weeks 1-2 Trailhead, Weeks 3-7 Salesforce projects, Weeks 8-12 BA case portfolio"
+      "action": "Weeks 1-2 Trailhead, Weeks 3-7 Salesforce projects, Weeks 8-12 BA case portfolio",
+      "package": "18–28 LPA"
     },
     {
       "no": "3",
@@ -1048,7 +1050,8 @@
       "portfolio": "AI use-case portfolio, ROI model, governance/risk checklist, board-style deck",
       "employers": "Consulting firms, enterprise digital offices, SaaS companies, AI startups",
       "ctcLogic": "Higher CTC comes from ability to convert AI hype into measurable business cases",
-      "action": "Complete 3 AI strategy cases across HR, marketing and operations"
+      "action": "Complete 3 AI strategy cases across HR, marketing and operations",
+      "package": "22–35 LPA"
     },
     {
       "no": "4",
@@ -1058,7 +1061,8 @@
       "portfolio": "Campaign plan, GA4 dashboard, SEO audit, paid media ROI model",
       "employers": "D2C brands, agencies, SaaS growth teams, marketplaces",
       "ctcLogic": "30 LPA possible in growth roles when the candidate proves acquisition economics and analytics, not only campaign setup",
-      "action": "Build one end-to-end growth case for a real product"
+      "action": "Build one end-to-end growth case for a real product",
+      "package": "18–30 LPA"
     },
     {
       "no": "5",
@@ -1068,7 +1072,8 @@
       "portfolio": "PRD, backlog, funnel/cohort analysis, product teardown, prioritization matrix",
       "employers": "SaaS, fintech, edtech, product startups, GCC product teams",
       "ctcLogic": "Product roles pay more when business judgment + analytics + customer understanding are visible",
-      "action": "Build 2 product teardowns and 1 analytics case study"
+      "action": "Build 2 product teardowns and 1 analytics case study",
+      "package": "20–30 LPA"
     },
     {
       "no": "6",
@@ -1078,7 +1083,8 @@
       "portfolio": "DMAIC project, process map, automation workflow, cost saving model",
       "employers": "Manufacturing, logistics, consulting, shared services, GCCs",
       "ctcLogic": "Operations pay improves when candidates quantify savings and automate processes",
-      "action": "Do one DMAIC project and one automation project"
+      "action": "Do one DMAIC project and one automation project",
+      "package": "14–22 LPA"
     },
     {
       "no": "7",
@@ -1088,7 +1094,8 @@
       "portfolio": "Risk register, controls matrix, incident response report, compliance dashboard",
       "employers": "Big 4 risk advisory, IT audit, banking risk, cyber consulting",
       "ctcLogic": "Non-coding cyber-GRC roles can suit MBA graduates if they prove controls and risk thinking",
-      "action": "Build GRC portfolio with 3 artifacts and study security basics daily"
+      "action": "Build GRC portfolio with 3 artifacts and study security basics daily",
+      "package": "15–25 LPA"
     },
     {
       "no": "8",
@@ -1098,7 +1105,8 @@
       "portfolio": "Attrition dashboard, HR KPI framework, HRIS process map, AI HR use-case policy",
       "employers": "HR analytics teams, HR tech, consulting, shared services",
       "ctcLogic": "30 LPA is harder in pure HR freshers, but HR tech/people analytics improves ceiling",
-      "action": "Build attrition dashboard and workforce planning case"
+      "action": "Build attrition dashboard and workforce planning case",
+      "package": "12–22 LPA"
     },
     {
       "no": "9",
@@ -1108,7 +1116,8 @@
       "portfolio": "3-statement model, budget vs actual dashboard, valuation summary, market brief",
       "employers": "GCC finance, FP&A teams, fintech, consulting, research firms",
       "ctcLogic": "Finance CTC rises with modeling depth, analytics tools and sector understanding",
-      "action": "Build finance model + Power BI finance dashboard"
+      "action": "Build finance model + Power BI finance dashboard",
+      "package": "16–28 LPA"
     }
   ],
   "notes": [
@@ -1141,5 +1150,11 @@
     "ISACA Cybersecurity Fundamentals",
     "Forage",
     "XE USD/INR"
-  ]
+  ],
+  "programInfo": {
+    "title": "MBA — Business Builder",
+    "tagline": "Premium global certifications mapping MBA students to 20–35+ LPA careers",
+    "duration": "2-year postgraduate program",
+    "target": "20–35+ LPA roles in consulting, analytics, product, growth"
+  }
 }
