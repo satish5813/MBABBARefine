@@ -1,7 +1,7 @@
 // BBA pathway data — undergraduate-tuned (foundational certs, 6–18 LPA targets)
 export const bbaData = {
   programInfo: {
-    title: "BBA — Business Builder",
+    title: "BBA — Career Builder",
     tagline: "Foundation-level global certifications for first jobs and 8–18 LPA trajectories",
     duration: "3-year undergraduate program",
     target: "6–18 LPA freshers and early-career roles",
