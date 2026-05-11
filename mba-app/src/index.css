@@ -6,15 +6,18 @@
 html, body, #root { height: 100%; margin: 0; }
 body {
   font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
-  color: #1e1b4b;
-  background: #eef0fb;
+  color: #0f172a;
+  background: #ffffff;
   overflow-x: hidden;
 }
 
 /* Animated background blobs */
 .bg-clay-canvas {
   position: relative;
-  background: linear-gradient(135deg, #eef0fb 0%, #fdf2f8 40%, #ecfeff 100%);
+  background:
+    radial-gradient(900px 600px at 10% -10%, #eef2ff 0%, transparent 60%),
+    radial-gradient(900px 600px at 110% 110%, #fdf2f8 0%, transparent 60%),
+    #ffffff;
 }
 .bg-clay-canvas::before,
 .bg-clay-canvas::after {
@@ -23,7 +26,7 @@ body {
   width: 520px;
   height: 520px;
   filter: blur(80px);
-  opacity: 0.55;
+  opacity: 0.45;
   z-index: 0;
   pointer-events: none;
   animation: blob 14s ease-in-out infinite;
@@ -39,24 +42,25 @@ body {
 }
 
 .clay {
-  background: #f5f3ff;
+  background: #ffffff;
   border-radius: 28px;
   box-shadow:
-    12px 12px 28px rgba(159,170,210,0.55),
-    -12px -12px 28px rgba(255,255,255,0.95);
+    14px 14px 30px rgba(99,102,180,0.18),
+    -10px -10px 24px rgba(255,255,255,1);
 }
 .clay-soft {
-  background: #f5f3ff;
+  background: #ffffff;
   border-radius: 22px;
   box-shadow:
-    8px 8px 20px rgba(159,170,210,0.45),
-    -8px -8px 20px rgba(255,255,255,0.9);
+    8px 8px 20px rgba(99,102,180,0.16),
+    -6px -6px 16px rgba(255,255,255,1);
 }
 .clay-inset {
   border-radius: 18px;
+  background: #f8fafc;
   box-shadow:
-    inset 6px 6px 12px rgba(159,170,210,0.4),
-    inset -6px -6px 12px rgba(255,255,255,0.95);
+    inset 6px 6px 12px rgba(99,102,180,0.18),
+    inset -6px -6px 12px rgba(255,255,255,1);
 }
 .clay-btn {
   border-radius: 18px;

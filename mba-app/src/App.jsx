@@ -74,7 +74,7 @@ function Stars({ n }) {
           ★
         </motion.span>
       ))}
-      <span className="ml-1 text-xs font-semibold text-slate-500">{v}/5</span>
+      <span className="ml-1 text-xs font-semibold text-slate-900">{v}/5</span>
     </div>
   );
 }
@@ -129,7 +129,7 @@ function Header({ program, setProgram }) {
             <h1 className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
               {program} Pathways
             </h1>
-            <p className="text-xs sm:text-sm text-slate-600 font-medium">
+            <p className="text-xs sm:text-sm text-slate-900 font-medium">
               KL University · Skill Development Centre
             </p>
           </motion.div>
@@ -230,7 +230,7 @@ function HeroBanner({ data, program }) {
         <h2 className="text-4xl sm:text-5xl font-extrabold leading-tight bg-gradient-to-br from-indigo-700 via-purple-700 to-pink-600 bg-clip-text text-transparent">
           {data.programInfo.title}
         </h2>
-        <p className="mt-4 text-slate-700 text-base sm:text-lg max-w-3xl font-medium">
+        <p className="mt-4 text-slate-900 text-base sm:text-lg max-w-3xl font-medium">
           {data.programInfo.tagline}
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -258,7 +258,7 @@ function HeroBanner({ data, program }) {
                 <div className="text-3xl font-extrabold text-indigo-900">
                   {h.num}
                 </div>
-                <div className="text-xs font-semibold uppercase tracking-wide text-slate-600 mt-1">
+                <div className="text-xs font-semibold uppercase tracking-wide text-slate-900 mt-1">
                   {h.label}
                 </div>
               </motion.div>
@@ -286,7 +286,7 @@ function OverviewTab({ data, program }) {
           <h3 className="text-xl font-bold text-indigo-900 mb-2">
             What is Business Builder?
           </h3>
-          <p className="text-slate-700 leading-relaxed">
+          <p className="text-slate-900 leading-relaxed">
             A structured, domain-wise journey that layers globally recognized
             credentials on top of {program} fundamentals. Students follow a
             <b> free-first → low-cost </b> stack and graduate with a verifiable
@@ -304,7 +304,7 @@ function OverviewTab({ data, program }) {
           <h3 className="text-xl font-bold text-indigo-900 mb-2">
             How It Works
           </h3>
-          <ol className="space-y-2 text-slate-700">
+          <ol className="space-y-2 text-slate-900">
             {[
               "Choose your target domain and role",
               "Complete the free credentials stack first",
@@ -331,7 +331,7 @@ function OverviewTab({ data, program }) {
         <h3 className="text-xl font-bold text-indigo-900 mb-4 flex items-center gap-2">
           <HiCheckBadge className="text-emerald-500" /> Source Notes & Planning
         </h3>
-        <div className="grid sm:grid-cols-2 gap-2 text-sm text-slate-700">
+        <div className="grid sm:grid-cols-2 gap-2 text-sm text-slate-900">
           {data.notes.map((n, i) => (
             <div key={i} className="flex items-start gap-2">
               <span className="text-emerald-500 mt-0.5">✓</span>
@@ -419,7 +419,7 @@ function ObjectivesTab({ program }) {
               <h3 className="text-lg font-bold text-indigo-900 mb-2">
                 {o.title}
               </h3>
-              <p className="text-sm text-slate-700 leading-relaxed">{o.body}</p>
+              <p className="text-sm text-slate-900 leading-relaxed">{o.body}</p>
             </motion.div>
           );
         })}
@@ -438,7 +438,7 @@ function PathwaysTab({ data }) {
       >
         🛤️ Domain-wise Student Pathways
       </motion.h2>
-      <p className="text-slate-600 -mt-3">
+      <p className="text-slate-900 -mt-3">
         Start free, layer low-cost, prove with portfolio.
       </p>
       <div className="grid md:grid-cols-2 gap-5">
@@ -460,7 +460,7 @@ function PathwaysTab({ data }) {
               <Step color="bg-clay-mint" label="Start Free" body={r.freeStart} />
               <Step color="bg-clay-sun" label="Then Paid / Low-cost" body={r.paidAdd} />
               <Step color="bg-clay-lilac" label="Portfolio Proof" body={r.portfolio} />
-              <div className="clay-inset bg-white p-3 italic text-slate-700">
+              <div className="clay-inset bg-white p-3 italic text-slate-900">
                 "{r.pitch}"
               </div>
             </div>
@@ -483,7 +483,7 @@ function Step({ color, label, body }) {
         <div className="text-xs font-bold uppercase text-indigo-600 tracking-wide">
           {label}
         </div>
-        <div className="text-slate-700">{body}</div>
+        <div className="text-slate-900">{body}</div>
       </div>
     </div>
   );
@@ -517,7 +517,7 @@ function RolesTab({ data }) {
                 <h3 className="text-xl font-extrabold text-indigo-900">
                   {p.role}
                 </h3>
-                <p className="text-sm text-slate-500">{p.mbaFit}</p>
+                <p className="text-sm text-slate-900">{p.mbaFit}</p>
               </div>
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -534,7 +534,7 @@ function RolesTab({ data }) {
             </div>
             <div className="mt-4 clay-inset bg-clay-sun p-4">
               <span className="font-extrabold text-amber-900">⚡ 90-Day Action: </span>
-              <span className="text-slate-700">{p.action}</span>
+              <span className="text-slate-900">{p.action}</span>
             </div>
           </motion.div>
         ))}
@@ -549,7 +549,7 @@ function InfoCard({ color, title, body }) {
       <div className="text-xs font-extrabold uppercase tracking-wide text-indigo-700 mb-1">
         {title}
       </div>
-      <p className="text-slate-800 text-sm">{body}</p>
+      <p className="text-slate-900 text-sm">{body}</p>
     </div>
   );
 }
@@ -590,7 +590,7 @@ function CertModal({ cert, program, onClose }) {
           <h2 className="text-2xl font-extrabold text-indigo-900 mt-1">
             {cert.name}
           </h2>
-          <p className="text-sm text-slate-500 mt-1">
+          <p className="text-sm text-slate-900 mt-1">
             {cert.provider} • {cert.level} • {cert.time}
           </p>
           <div className="mt-3"><Stars n={cert.relevance} /></div>
@@ -638,7 +638,7 @@ function Info({ label, body, full }) {
       <div className="text-[10px] font-bold uppercase tracking-wider text-indigo-600">
         {label}
       </div>
-      <div className="text-sm text-slate-700 mt-0.5">{body || "—"}</div>
+      <div className="text-sm text-slate-900 mt-0.5">{body || "—"}</div>
     </div>
   );
 }
@@ -679,7 +679,7 @@ function CertsTab({ data, program }) {
         <h2 className="text-3xl font-extrabold text-indigo-900">
           🎓 Certifications Catalog
         </h2>
-        <p className="text-slate-600 mt-1">
+        <p className="text-slate-900 mt-1">
           {filtered.length} of {data.certs.length} certifications · click any
           card for your projected package.
         </p>
@@ -752,7 +752,7 @@ function CertsTab({ data, program }) {
                 <h3 className="font-extrabold text-indigo-900 leading-snug">
                   {c.name}
                 </h3>
-                <p className="text-xs text-slate-500 mt-1">
+                <p className="text-xs text-slate-900 mt-1">
                   {c.provider} · {c.level} · {c.time}
                 </p>
                 <div className="mt-2"><Stars n={c.relevance} /></div>
@@ -765,7 +765,7 @@ function CertsTab({ data, program }) {
                 </div>
 
                 <div className="mt-4 flex items-center justify-between text-xs">
-                  <span className="text-slate-600 font-semibold">
+                  <span className="text-slate-900 font-semibold">
                     {c.costCategory}
                   </span>
                   <span className="text-indigo-600 font-bold flex items-center gap-1">
@@ -779,7 +779,7 @@ function CertsTab({ data, program }) {
       </motion.div>
 
       {filtered.length === 0 && (
-        <p className="text-center text-slate-500 py-10">
+        <p className="text-center text-slate-900 py-10">
           No certifications match these filters.
         </p>
       )}
@@ -817,7 +817,7 @@ export default function App() {
           </motion.div>
         </AnimatePresence>
       </main>
-      <footer className="relative z-10 py-6 text-center text-xs text-slate-500 font-medium">
+      <footer className="relative z-10 py-6 text-center text-xs text-slate-900 font-medium">
         © {new Date().getFullYear()} KL University · Skill Development Centre ·
         Prepared 2026-05-11
       </footer>
